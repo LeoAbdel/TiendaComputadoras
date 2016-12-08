@@ -1,0 +1,176 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700);
+
+
+body {
+background: rgb(230,230,230);
+}
+/* CABECERA */
+#header {
+background-color:#2d2d2d;
+color: #ECE9E6;
+padding:1em;
+box-shadow: 0 0 155px rgba(0,0,0,0.75) inset;
+}
+
+#header h1 {
+text-align: center;
+font: 70px;
+font-weight: 500;
+margin: 1em;
+
+}
+
+h1 {
+display: block;
+font-size: 3em;
+font-weight: bold;
+}
+
+/* PAGINA */
+#page #content {
+border: 0;
+padding: 0;
+max-width: 1024px;
+margin: auto;
+}
+
+/* MENU NAVEGACION */
+nav ul {
+  margin:0; /* PAGINA SIN MARGENES */
+  padding:1em;
+  left:0;
+  right:0;
+  list-style-type:none; /* Quitar lista */
+  font-family:"Open Sans";
+}
+
+#menu {
+  display:table;
+  overflow:hidden;
+  width:100%;
+  background:#2d2d2d;
+  position:relative;
+}
+
+#menu li {
+  display:table-cell;
+} /* COLOCA MENU EN CELDAS */
+
+#menu li a {
+  color:#fff;
+  dispaly:block; /* CAMBIAR ANCHO Y ALTO DEL ELEMENTO a */
+  line-heigth:20px;
+  padding:20px;
+  position:relative;
+  text-align:center;
+  text-decoration:none;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+#nenu a:hover {
+  background:#5da5a2;
+  display: block;
+}
+
+/* COLOCAR ICONOS HACIA EL FONDO PARA LA ANIMACION */
+nav > ul > li > a span {
+  background:#174459;
+  display:block; /* LOS ICONOS LOS QUITAMOS COMO ELEMENTOS EN LINEA */
+  height:100%;
+  width:100%;
+  left:0px;
+  position:absolute;
+  top:-55px;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+/* CENTRAR ICONOS */
+nav > ul > li > a span .fa {
+  diaplay:block;
+  padding:2em;
+  position:center;
+}
+
+/* ICONOS BAJEN AL PASAR EL PUNTERO */
+/* SE ACCEDE AL ELEMENTO a Y CUANDO PASEMOS EL
+PUNTERO SOBRE EL ELEMENTO a LOS CAMBIOS SE VAN A APLICAR AL ELMENTO span */
+nav > ul > li > a:hover > span {
+  top:0;
+}
+/* -------------------------------------- */
+
+/* INICIO SUB-MENU */
+.list:hover {
+  display: block; /* INDICA QUE AL PASAR EL PUNTERO POR EL ELEMENTO li MUESTRE EL ELMENTO ul */
+}
+
+#submenu {
+  display: none;
+  position:absolute;
+  background:#fff; /* PROBLEMA BARRA NEGRA */
+  overflow:hidden; /* LOS ELEMENTOS NO QUEDEN FUERA */
+  left:0;
+  rigth:0;
+  height:0%;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease; 
+}
+
+/* COLORES FONDO ICONOS */
+.color1 {
+  background:#6ECFCF;
+}
+.color2 {
+  background:#4FC44F;
+}
+.color3 {
+  background:#C35B4B;
+}
+.color4 {
+  background:#D98CD5;
+}
+.color5 {
+  background:#C8995B;
+}
+/* FIN SUB-MENU */
+
+/* INICIO BODY */
+#content { 
+display: block;
+}
+
+h2 {
+font: 48px;
+letter-spacing: -1pt;
+font-weight: 600;
+color: #2d2d2d;
+text-align: center;
+}
+
+/* FIN DEL BODY */
+
+/* FOOTER */
+footer p {
+margin: 0;
+padding: 0;
+}
+footer {
+background: #2d2d2d;
+color: #eee;
+font: 16px 'Open Sans';
+text-align: center;
+}
+
+
+/*Carrousel*/

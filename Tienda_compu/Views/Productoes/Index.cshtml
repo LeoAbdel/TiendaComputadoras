@@ -1,0 +1,172 @@
+﻿@model IEnumerable<Tienda_compu.Models.Producto>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<head>
+    @Styles.Render("~/Content/otro.css")
+    @Styles.Render("~/Content/Estilos.css")
+    @Styles.Render("~/Content/StyleSheet.css")
+    @Styles.Render("~/Content/redes.css")
+    @Styles.Render("~/Content/peeling.css")
+    @Styles.Render("~/Content/flip.css")
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400italic,700italic,400,700' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
+    <link rel="stylesheet" href="~/Content/Estilos.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+</head>
+
+<header>
+    <div id="header">
+
+        <div id="box">
+
+            <canvas id="kenburns"></canvas>
+            <script type="text/javascript" src="/Scripts/fade.js"></script>
+        </div>
+
+        <h1>Bienvenidos a la Tienda de Computadoras</h1>
+    </div>
+    <div id="page"></div>
+    <!--MENU-->
+    <nav role='navigation'>
+        <ul id="menu">
+            <li><a href="Index.cshtml"><span class="color1"><i class="fa fa-home"></i></span>Inicio</a></li>
+            <li><a href="#"><span class="color2"><i class="fa fa-file-text"></i></span>Articulos</a></li>
+            <li class="list">
+                <a href="#"><span class=""><i class="fa fa-tag"></i></span>Categorias</a>
+                <ul id="submenu">
+                    <li><a href="#"> <span class="color7"><i class="fa fa-windows"></i></span>Prueba</a></li>
+
+                </ul>
+            </li>
+            <li><a href="#"><span class="color3"><i class="fa fa-link"></i></span>Enlaces</a></li>
+            <li><a href="Views/Home/Contact.cshtml"><span class="color4"><i class="fa fa-envelope"></i></span>Contacto</a></li>
+            <li><a href="#"><span class="color5"><i class="fa fa-file"></i></span>Aviso Legal</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <div id="content">
+
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+                <div class="front">
+                    <span class="name">Principales productos</span>
+                </div>
+                <div class="back">
+                    <div class="back-logo"></div>
+                    <div class="back-title">nombre página xD</div>
+                    <p>Para relizar tus compras debes conocer los productos que se ofrecen entre los cuales tenemos: Computadoras potátiles, Desktop, mini  computadoras, entre otras</p>
+                </div>
+            </div>
+        </div>
+        <h2>Index</h2>
+        <p>
+            @Html.ActionLink("Create New", "Create")
+        </p>
+
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Categoria.Nombre)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Marca)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Ram)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Almacenamiento)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Peso)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Precio)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Color)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Teclado)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TipoPantalla)
+                </th>
+                <th></th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Categoria.Nombre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nombre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Marca)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Ram)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Almacenamiento)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Peso)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Precio)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Color)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Teclado)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TipoPantalla)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                    </td>
+                </tr>
+            }
+        </table>
+
+
+    </div>
+</body>
+<footer>
+
+</footer>
+
+
+<a href='http://facebook.com/Username' rel='nofollow' target='_blank'>
+    <div class='social facebook'>
+        <span class='social-facebook'>Facebook</span>
+    </div>
+</a>
+<a href='http://twitter.com/Username' rel='nofollow' target='_blank'>
+    <div class='social twitter'>
+        <span class='social-twitter'>Twitter</span>
+    </div>
+</a>
+<a href='http://plus.google.com/Username' rel='nofollow' target='_blank'>
+    <div class='social gplus'>
+        <span class='social-gplus'>Google+</span>
+    </div>
+</a>
+

@@ -1,0 +1,131 @@
+﻿
+
+<head>
+    @Styles.Render("~/Content/Estilos.css")
+    @Styles.Render("~/Content/StyleSheet.css")
+    @Styles.Render("~/Content/redes.css")
+    @Styles.Render("~/Content/peeling.css")
+    <script type="text/javascript"
+            src="/Scripts/fade.js">
+    </script>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
+    <link rel="stylesheet" href="~/Content/Estilos.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+
+</head>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+<header>
+    <div id="header">
+       
+       <div id="box">
+
+           <canvas id="kenburns"></canvas>
+           <script type="text/javascript" src="/Scripts/fade.js"></script>
+        </div>
+        
+        <h1>Bienvenidos a la Tienda de Computadoras</h1>
+    </div>
+    <div id="page"></div>
+    <!--MENU-->
+    <nav role='navigation'>
+        <ul id="menu">
+            <li><a href="Index.cshtml"><span class="color1"><i class="fa fa-home"></i></span>Inicio</a></li>
+            <li><a href="#"><span class="color2"><i class="fa fa-file-text"></i></span>Articulos</a></li>
+            <li class="list">
+                <a href="#"><span class=""><i class="fa fa-tag"></i></span>Categorias</a>
+                <ul id="submenu">
+                    <li><a href="#"> <span class="color7"><i class="fa fa-windows"></i></span>Prueba</a></li>
+                    
+                </ul>
+            </li>
+            <li><a href="#"><span class="color3"><i class="fa fa-link"></i></span>Enlaces</a></li>
+            <li><a href="Views/Home/Contact.cshtml"><span class="color4"><i class="fa fa-envelope"></i></span>Contacto</a></li>
+            <li><a href="#"><span class="color5"><i class="fa fa-file"></i></span>Aviso Legal</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+
+    <div id="Awesome" class="anim750">
+
+        <div class="reveal circle_wrapper">
+            <div class="circle">¡Visítanos!</div>
+        </div>
+
+        <div class="sticky anim750">
+            <div class="front circle_wrapper anim750">
+                <div class="circle anim750"></div>
+            </div>
+        </div>
+
+        <h4>¡Mírame!</h4>
+
+        <div class="sticky anim750">
+            <div class="back circle_wrapper anim750">
+                <div class="circle anim750"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="content">
+        <h2> Nueva Página sobre el mundo de la tecnologia</h2>
+        
+        <!--Peeling sticky-->
+        <!--Carrousel-->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:700' rel='stylesheet' hreflang="StyleSheet.css" type='text/css'>
+        <div class="conteneur">
+            <div class="circle">
+                <div class="point_general point1">
+                    <span class="texte">Ergo ergo vel videre ad eventu plebem permittunt textum</span>
+                </div>
+                <div class="point_general point2">
+                    <span class="texte">Sollemnia ita ita ita in regis imitatus</span>
+                </div>
+                <div class="point_general point3">
+                    <span class="texte">Deiectas fieri scholarum super nec iniusta</span>
+                </div>
+                <div class="point_general point4">
+                    <span class="texte">Contemnendos se contemni non extollere opere submittere</span>
+                </div>
+                <div class="point_general point5">
+                    <span class="texte">Quae quae quiete equestrium planitie vicos cohortium</span>
+                </div>
+                <div class="point_general point6">
+                    <span class="texte">Ex rebus agrestibus tranquillis et licet veteres</span>
+                </div>
+                <div class="point_general point7">
+                    <span class="texte">Seleucus plagam ab quam limes Nicator pelagi Nili regna cum</span>
+                </div>
+                <div class="point_general point8">
+                    <span class="texte">Sublimius spatiis spatiis pari palmite uberi quam ad verticibus </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<footer>
+    
+</footer>
+<a href='http://facebook.com/Username' rel='nofollow' target='_blank'>
+    <div class='social facebook'>
+        <span class='social-facebook'>Facebook</span>
+    </div>
+</a>
+<a href='http://twitter.com/Username' rel='nofollow' target='_blank'>
+    <div class='social twitter'>
+        <span class='social-twitter'>Twitter</span>
+    </div>
+</a>
+<a href='http://plus.google.com/Username' rel='nofollow' target='_blank'>
+    <div class='social gplus'>
+        <span class='social-gplus'>Google+</span>
+    </div>
+</a>
+

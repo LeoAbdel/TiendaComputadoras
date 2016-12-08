@@ -1,0 +1,98 @@
+﻿@model Tienda_compu.Models.Producto
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Producto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Categoria.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Categoria.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Marca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Marca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ram)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ram)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Almacenamiento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Almacenamiento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Peso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Peso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Precio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Precio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Color)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Color)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Teclado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Teclado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoPantalla)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoPantalla)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
